@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 19:11:42 by nsimon            #+#    #+#             */
-/*   Updated: 2021/02/12 12:24:23 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/02/16 00:35:17 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,13 @@ std::string	formatPrint(std::string str)
 
 void	search(Contact list[8])
 {
+	int			i;
 	std::string	choix;
 
 	std::cout << "+-------------------------------------------+" << std::endl;
 	std::cout << "|     Index|First Name| Last Name|  NickName|" << std::endl;
 	std::cout << "+-------------------------------------------+" << std::endl;
-	for (int i = 0; i < 8 && !list[i]._empty; i++)
+	for (i = 0; i < 8 && !list[i]._empty; i++)
 	{
 		std::cout << "| " << "        " << i \
 		<< "|" << formatPrint(list[i].getFirstName()) \
@@ -58,13 +59,13 @@ void	search(Contact list[8])
 		<< "|" << formatPrint(list[i].getNickName()) << "|" << std::endl;
 	}
 	std::cout << "+-------------------------------------------+" << std::endl << std::endl;
-	while (1)
+	while (i > 0)
 	{
-		std::cout << "What contact do you want ? ";
+		std::cout << "Type the index of the desired contact (or EXIT): ";
 		std::getline(std::cin, choix);
 		if (!choix.compare("EXIT") || !choix.compare("exit"))
 			break;
-		if (choix[0] - '0' < 8 && !list[choix[0] - '0']._empty)
+		if (choix[0] >= '0' && choix[0] - '0' < 8 && !list[choix[0] - '0']._empty)
 		{
 			std::cout << std::endl;
 			list[std::stoi(choix)].print();
