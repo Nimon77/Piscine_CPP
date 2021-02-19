@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 16:43:28 by nsimon            #+#    #+#             */
-/*   Updated: 2021/02/19 20:45:36 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/02/19 21:04:11 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,6 @@ int main(int argc, char **argv)
 			outputFile << line << std::endl;
 		}
 	}
+	else
+		std::cout << "Usage : ./replace Filname \"search\" \"replace\"" << std::endl;
 }

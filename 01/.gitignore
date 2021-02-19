@@ -5,3 +5,4 @@ subjects/
 objs/
 !Makefile
 .vscode
+fr.subject.pdf
