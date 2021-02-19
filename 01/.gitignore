@@ -1,0 +1,7 @@
+*
+!/**/
+!*.*
+subjects/
+objs/
+!Makefile
+.vscode
