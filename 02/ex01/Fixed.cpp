@@ -6,12 +6,13 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 17:16:38 by nsimon            #+#    #+#             */
-/*   Updated: 2021/03/02 15:48:50 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/03/06 17:52:28 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 #include <iostream>
+#include <cmath>
 
 Fixed::Fixed(): _rawBits(0) {
 	std::cout << "Default constructor called" << std::endl;
