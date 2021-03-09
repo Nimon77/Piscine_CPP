@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/09 01:36:01 by nsimon            #+#    #+#             */
-/*   Updated: 2021/03/09 04:09:06 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/03/09 05:01:16 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 # define FRAGTRAP_HPP
 
-# define RED std::string("\033[1;31m")
-# define GREEN std::string("\033[1;32m")
+# define RED "\033[1;31m"
+# define GREEN "\033[1;32m"
+# define SURGREEN "\033[42m"
+# define SURCYAN "\033[46m"
+# define SURRED "\033[101m"
 # define RESET "\033[0m"
 
 # include <iostream>

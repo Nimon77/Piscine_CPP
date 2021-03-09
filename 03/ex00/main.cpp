@@ -6,13 +6,17 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/09 02:20:52 by nsimon            #+#    #+#             */
-/*   Updated: 2021/03/09 04:45:24 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/03/09 05:02:03 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
 int	main() {
+	std::cout << SURCYAN << "---------------------" << RESET
+		<< GREEN << " FragTrap " << RESET << SURCYAN
+		<< "---------------------" << RESET << std::endl;
+
 	FragTrap frag1;
 	FragTrap frag2("test");
 	FragTrap frag3(frag2);
