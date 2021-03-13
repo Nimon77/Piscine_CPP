@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/12 17:14:04 by nsimon            #+#    #+#             */
-/*   Updated: 2021/03/12 22:37:25 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/03/13 02:35:09 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void	NinjaTrap::ninjaShoebox(ClapTrap & target) {
 	}
 	setEnergy(getEnergy() - 25);
 	std::cout << YELLOW << "NINJ4-TP " << RED << getName() << RESET
-		<< ": challenge " << ORANGE << "CL4P-TP " << RED << target.getName()
+		<< ": attack shoebox on " << ORANGE << "CL4P-TP " << RED << target.getName()
 		<< RESET << ": " << attack[std::rand() % 5]
 		<< " (energy: " << GREEN << getEnergy() << RESET << ")" << std::endl;
 	target.takeDamage(getMeleeDamage());
@@ -105,7 +105,7 @@ void	NinjaTrap::ninjaShoebox(FragTrap & target) {
 	}
 	setEnergy(getEnergy() - 25);
 	std::cout << YELLOW << "NINJ4-TP " << RED << getName() << RESET
-		<< ": challenge " << LBLUE << "FR4G-TP " << RED << target.getName()
+		<< ": attack shoebox on " << LBLUE << "FR4G-TP " << RED << target.getName()
 		<< RESET << ": " << attack[std::rand() % 5]
 		<< " (energy: " << GREEN << getEnergy() << RESET << ")" << std::endl;
 	target.takeDamage(getMeleeDamage());
@@ -128,7 +128,7 @@ void	NinjaTrap::ninjaShoebox(ScavTrap & target) {
 	}
 	setEnergy(getEnergy() - 25);
 	std::cout << YELLOW << "NINJ4-TP " << RED << getName() << RESET
-		<< ": challenge " << MAGENTA << "SC4V-TP " << RED << target.getName()
+		<< ": attack shoebox on " << MAGENTA << "SC4V-TP " << RED << target.getName()
 		<< RESET << ": " << attack[std::rand() % 5]
 		<< " (energy: " << GREEN << getEnergy() << RESET << ")" << std::endl;
 	target.takeDamage(getMeleeDamage());
@@ -151,7 +151,7 @@ void	NinjaTrap::ninjaShoebox(NinjaTrap & target) {
 	}
 	setEnergy(getEnergy() - 25);
 	std::cout << YELLOW << "NINJ4-TP " << RED << getName() << RESET
-		<< ": challenge " << YELLOW << "NINJ4-TP " << RED << target.getName()
+		<< ": attack shoebox on " << YELLOW << "NINJ4-TP " << RED << target.getName()
 		<< RESET << ": " << attack[std::rand() % 5]
 		<< " (energy: " << GREEN << getEnergy() << RESET << ")" << std::endl;
 	target.takeDamage(getMeleeDamage());
