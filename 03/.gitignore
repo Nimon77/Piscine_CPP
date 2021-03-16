@@ -5,5 +5,5 @@ subjects/
 objs/
 !Makefile
 .vscode
-*.subject.pdf
+fr.subject.pdf
 a.out
