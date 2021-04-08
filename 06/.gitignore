@@ -1,0 +1,9 @@
+*
+!/**/
+!*.*
+subjects/
+objs/
+!Makefile
+.vscode
+*.subject.pdf
+a.out*
