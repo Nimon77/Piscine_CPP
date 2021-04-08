@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/02 18:24:22 by nsimon            #+#    #+#             */
-/*   Updated: 2021/04/06 18:15:51 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/04/08 19:47:35 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@
 # include <iostream>
 # include <string>
 # include <exception>
-# include <limits>
+# include <climits>
 # include <cmath>
 # include <bitset>
+# include <cstdlib>
 
 class convSca
 {

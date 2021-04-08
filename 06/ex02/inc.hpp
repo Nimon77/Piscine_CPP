@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 18:47:30 by nsimon            #+#    #+#             */
-/*   Updated: 2021/04/08 19:17:28 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/04/08 20:05:22 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <unistd.h>
+# include <cstdlib>
 
 class Base { public: virtual ~Base(); };
 class A: public Base {};

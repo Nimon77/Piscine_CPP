@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MakeFile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/05 18:27:54 by nsimon            #+#    #+#              #
-#    Updated: 2021/04/06 18:18:00 by nsimon           ###   ########.fr        #
+#    Updated: 2021/04/08 19:47:04 by nsimon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,12 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 		@echo "\033[34mCreation of $(NAME) ...\033[0m"
-		@$(CC) $(OBJ) -o $(NAME)
+		@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 		@echo "\033[32m$(NAME) created\n\033[0m"
 
 $(OBJ_PATH)%.o: %.cpp
 		@mkdir $(OBJ_PATH) 2> /dev/null || true
-		@$(CC) -o $@ -c $<
+		@$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 		@echo "\033[33mRemoval of .o files of $(NAME) ...\033[0m"
