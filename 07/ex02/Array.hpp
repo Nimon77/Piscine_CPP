@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 15:16:33 by nsimon            #+#    #+#             */
-/*   Updated: 2021/04/13 16:37:38 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/04/13 17:38:45 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Array
 	public:
 		Array(): _size(0), _array(NULL) {}
 		Array(unsigned int n): _size(n), _array(new T[n]()) {}
-		Array(Array const &ref) { *this = ref; }
+		Array(Array const &ref): _size(0), _array(NULL) { *this = ref; }
 		Array &operator=(Array const &ref)
 		{
 			if (&ref == this)
