@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 15:16:33 by nsimon            #+#    #+#             */
-/*   Updated: 2021/04/13 15:45:06 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/04/13 16:37:38 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ARRAY_HPP
 
 # include <string>
+# include <stdexcept>
 
 template<typename T>
 class Array
