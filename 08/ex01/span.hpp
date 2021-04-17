@@ -6,7 +6,7 @@
 /*   By: nsimon <nsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/16 03:36:07 by nsimon            #+#    #+#             */
-/*   Updated: 2021/04/17 15:07:14 by nsimon           ###   ########.fr       */
+/*   Updated: 2021/04/17 20:01:00 by nsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <vector>
 # include <algorithm>
 # include <iterator>
+# include <climits>
 
 class Span
 {
